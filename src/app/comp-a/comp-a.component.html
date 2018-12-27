@@ -1,0 +1,12 @@
+<div id="compa">
+  <p>
+    comp-a works!
+  </p>
+  <ul>
+    <li *ngFor="let ttt of userList">
+      <app-comp-b [name-compB]="ttt" (selectedMyUserId)="selectedMyUser=ttt"></app-comp-b>
+    </li>
+  </ul>
+  <h1>{{selectedMyUser?.name}}</h1>
+
+</div>
